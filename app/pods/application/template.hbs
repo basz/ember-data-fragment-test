@@ -1,0 +1,13 @@
+<h1>
+    Zoo
+</h1>
+
+<h3>
+    {{model.name}}
+</h3>
+
+<ul>
+    {{#each model.animals as |animal|}}
+        <li>{{animal.name}} [{{animal.trunkLength}}, {{animal.hasManes}}]</li>
+    {{/each}}
+</ul>
